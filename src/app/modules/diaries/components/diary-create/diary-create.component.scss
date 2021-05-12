@@ -1,0 +1,51 @@
+
+//combobox
+.blog-container{
+  // margin-top: 64px;
+  position: absolute;
+  min-width: 685px;
+  transform: translate(-50%);
+  left: 50%;
+  top: 65px;
+}
+
+::ng-deep .combo, mat-form-field{
+  // margin: 8px;
+  width: 100%;
+}
+
+::ng-deep .mat-select-panel{
+  min-width: calc(100% + 20px)!important;
+  margin-top: 40px;
+  margin-left: 30px
+}
+::ng-deep mat-select .cdk-overlay-pane{
+  transform: translate(-10px, 26px)!important;
+}
+// input title
+::ng-deep .example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+::ng-deep .mat-form-field-flex {
+  background-color: #ffffff!important;
+}
+
+::ng-deep .mat-form-field-flex{
+  padding-left: 12px;
+}
+.example-full-width {
+  width: 100%;
+}
+
+//button
+.button-field{
+  display: flex;
+  padding-top: 18px
+  // margin-top: 20px;
+}
+button{
+  margin-left: auto!important;
+}

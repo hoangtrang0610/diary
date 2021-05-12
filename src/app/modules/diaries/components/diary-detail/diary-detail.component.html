@@ -1,0 +1,26 @@
+<div class="wrapper_detail">
+  <div class='box_detail'>
+    <div class='box_left'>
+      <div class='box_header'>
+        <button class='btn-back' (click)="onBackHomePage()">
+          <mat-icon>arrow_back</mat-icon>
+        </button>
+        <h2 class='box_theme'>{{diaryDetail?.topics[0].name}}</h2>
+        <button class='btn-heart'>
+          <mat-icon>favorite</mat-icon>
+        </button>
+      </div>
+      <div class='box_info'>
+        <p class='box_title'>{{diaryDetail?.title}}</p>
+        <p class='box_title'>{{diaryDetail?.title}}</p>
+        <p class='box_created'>Date : {{diaryDetail?.creationTime}}</p>
+      </div>
+    </div>
+    <div class='box_right'>
+      <div class='box_content'>
+        {{diaryDetail?.content}}
+      </div>
+    </div>
+  </div>
+</div>
+

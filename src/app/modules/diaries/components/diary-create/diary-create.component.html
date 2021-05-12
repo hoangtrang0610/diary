@@ -1,0 +1,23 @@
+<div class="blog-container">
+  <form [formGroup]="formGroup" (ngSubmit)="createDiary()">
+
+    <mat-form-field appearance="fill" class="combo">
+      <mat-label>Topics</mat-label>
+      <mat-select [(value)]="selected" formControlName="topicIds" multiple>
+        <mat-option *ngFor="let topic of topicList" [value]="topic.id">{{topic.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Title</mat-label>
+      <input matInput placeholder="What a fun day I had!" formControlName="title">
+    </mat-form-field>
+
+    <ckeditor [editor]="Editor" (ready)="onReady($event)" formControlName="content"></ckeditor>
+
+    <div class="button-field">
+      <button type="submit" mat-raised-button color="primary">Create</button>
+    </div>
+  </form>
+
+</div>
